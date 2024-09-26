@@ -52,11 +52,31 @@
   <a href="https://t.me/Ail_2005z" target="_blank"> رابط ملف شخصي </a>
   <img src="aw.jpg" alt="this is image" width="100%" title="https://t.me/Ail_2005z"/>
   <!--form-->
-  <form action="index.php">
-    <input type="text" placeholder="الاسم"/>
-    <input type="text" placeholder="ايميل"/>
-    <input type="password" placeholder="باسورد">
-<input type="submit" value="send">
+<div class="input-container">
+        <label for="userInput">Enter your text:</label>
+        <input type="text" id="userInput" name="userInput" placeholder="Type here...">
+    </div>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Input Notification Example</title>
+            <script>
+                function showNotification() {
+                    const inputText = document.getElementById('userInput').value;
+                    if (inputText) {
+                        alert(inputText);
+                    } else {
+                        alert('Please enter some text.');
+                    }
+                }
+            </script>
+        </head>
+        <body>
+            <h1>Input Notification Example</h1>
+            <input type="text" id="userInput" placeholder="Enter your text here">
+            <button onclick="showNotification()">Submit</button>
+
     
   </form> 
   <video src="AA1.VID.mp4" autoplay controls muted>
